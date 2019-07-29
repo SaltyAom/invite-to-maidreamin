@@ -9,15 +9,13 @@
     "start": "cross-env NODE_ENV=production node server.js"
   },
   "dependencies": {
-    "@zeit/next-css": "0.2.1-canary.4",
+    "@zeit/next-css": "1.0.1",
     "cacheable-response": "^1.6.12",
     "compression": "^1.7.4",
     "cross-env": "^5.2.0",
     "express": "^4.17.1",
     "module-alias": "^2.2.0",
-    "next": "^8.1.0",
-    "next-fonts": "^0.17.0",
-    "next-nprogress": "^1.4.0",
+    "next": "^9.0.2",
     "preact": "^10.0.0-beta.3",
     "preact-render-to-string": "^5.0.4",
     "preact-ssr-prepass": "^1.0.0"
@@ -27,8 +25,9 @@
     "react-dom": "node_modules/preact/compat",
     "react-ssr-prepass": "node_modules/preact-ssr-prepass",
     "components": "components",
+    "static": "static",
     "css": "static/css",
-    "static": "static"
+    "assets": "static/assets"
   },
   "devDependencies": {
     "react": "^16.8.6",
