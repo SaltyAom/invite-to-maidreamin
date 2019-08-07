@@ -42,7 +42,7 @@
     "react-dom": "^16.8.6",
     "typescript": "^3.5.3"
   },
-  "resolution": {
+  "resolutions": {
     "lodash": "^4.17.13"
   }
 }
