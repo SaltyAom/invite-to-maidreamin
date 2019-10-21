@@ -30,9 +30,9 @@
     "react-dom": "node_modules/preact/compat",
     "react-ssr-prepass": "node_modules/preact-ssr-prepass",
     "components": "components",
-    "static": "static",
-    "css": "static/css",
-    "assets": "static/assets"
+    "public": "public",
+    "css": "public/css",
+    "assets": "public/assets"
   },
   "devDependencies": {
     "react": "^16.8.6",

@@ -1,5 +1,3 @@
-import { h } from 'preact'
-
 import AppLayout from 'components/appLayout'
 import Header from 'components/header'
 import CreateLayout from 'components/createLayout'

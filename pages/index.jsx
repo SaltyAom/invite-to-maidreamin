@@ -74,7 +74,7 @@ const Index = () => {
 					</div>
 					<img
 						id="landing-info-graphic"
-						src="/static/svg/mobile.svg"
+						src="/svg/mobile.svg"
 						alt="Person holding a mobile phone"
 					/>
 					<div id="landing-bubble" />
@@ -103,7 +103,7 @@ const Index = () => {
 					>
 						<img
 							id="facebook-icon"
-							src="/static/svg/facebook.svg"
+							src="/svg/facebook.svg"
 							alt="Facebook icon"
 						/>
 						Sign in with{" "}
@@ -117,7 +117,7 @@ const Index = () => {
 				<img
 					id="landing-info-graphic"
 					className="login"
-					src="/static/svg/mobile.svg"
+					src="/svg/mobile.svg"
 					alt="Person holding a mobile phone"
 				/>
 				<div id="landing-bubble" className="login" />

@@ -1,5 +1,3 @@
-import { h } from 'preact'
-
 import { connect } from 'react-redux'
 
 import AppLayout from 'components/appLayout'

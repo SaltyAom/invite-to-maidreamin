@@ -10,7 +10,7 @@
             "use": "@now/next" 
         },
         {
-            "src": "static/**/*", 
+            "src": "public/**/*", 
             "use": "@now/static" 
         }
     ],
