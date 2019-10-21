@@ -1,0 +1,30 @@
+@import '~stylus/colors'
+
+@font-face
+  font-family Roboto
+  src url('/static/fonts/Roboto-Regular.ttf') format('truetype')
+  font-display swap
+
+html, body
+  overflow-x hidden
+
+body
+  margin 0
+  background-color background
+
+* 
+  font-family Roboto, 'Segoe UI', Helvetica, Tahoma, Geneva, Verdana, sans-serif 
+  font-weight 400
+  box-sizing border-box
+
+::selection, ::-webkit-selection
+  background-color rgba(0,123,255,.25)
+
+#__next
+  display flex
+  flex-direction column
+  justify-content flex-start
+  align-items center
+  width 100%
+  padding 50px 0
+  overflow-y hidden

@@ -1,0 +1,123 @@
+@import '~stylus/colors'
+
+#dashboard-aside
+    display flex
+    flex-direction column
+    justify-content center
+    align-items flex-start
+    margin 5px 0 15px 0
+
+    & > .wrapper
+        display flex
+        flex-direction row
+        justify-content center
+        align-items center
+
+        & > .tab
+            appearance none
+            border 0
+            background-color transparent
+            display block
+            padding 8px 0
+            width 100px
+            font-size 16px        
+            cursor pointer
+            outline none
+        
+    & > .underline
+        display block
+        width 100px
+        height 3px
+        background-color primary-1
+        transition margin-left .2s ease-in-out
+
+        &.active
+            margin-left 100px
+
+#dashboard-data
+    display flex
+    flex-direction column
+    justify-content flex-start
+    align-items flex-start
+    margin 10px 0
+    padding 10px 0
+
+    & > #title
+        font-size 36px
+        font-weight bold
+        margin 0 0 30px 0
+
+    & > #detail
+        display flex
+        flex-direction row
+        justify-content flex-start
+        align-items center
+        font-size 16px
+        color detail-2
+        font-weight bold
+        margin 5px 0
+
+        & > .material-icons
+            font-size 18px
+            margin-right .35em
+
+    & > #time
+        font-size 16px
+        color detail-3
+        margin 5px 0 30px 0
+        padding-left 24px
+    
+    & > #host
+        display flex
+        flex-direction row
+        justify-content flex-start
+        align-items center
+        font-size 18px
+        color detail-1
+        margin 30px 0
+
+        & > #host-photo
+            display block
+            width 48px
+            height 48px
+            margin-right .5em
+            border-radius 24px
+            object-fit cover
+            object-position center
+
+    & > #notify-form
+        display flex
+        flex-direction row
+        justify-content flex-start
+        align-items center
+        user-select none
+        -webkit-user-select none
+        cursor pointer
+
+        & > #notify-me
+            position relative
+            appearance none
+            width 18px
+            height 18px
+            border-radius 3px
+            background-color transparent
+            margin-right .35em
+            border 2px solid primary-1
+            outline none
+            cursor pointer
+
+            &:checked
+                background-color primary-1
+
+                &::before
+                    position absolute
+                    content "check"
+                    top -1px
+                    left -1px
+                    font-size 16px
+                    color #fff
+
+        & > #notify-detail
+            font-size 16px
+            color detail-2
+            font-weight bold

@@ -1,0 +1,74 @@
+@import '~stylus/colors'
+
+.input-detail
+    color detail-3
+    font-size 16px
+    font-weight bold
+    margin 5px 0 30px 0
+    transition color .25s ease-out, opacity .25s ease-out
+
+.calendar
+    display grid
+    grid-auto-rows 1fr
+    grid-template-columns repeat(7, 1fr)
+    grid-gap 15px
+    width 426px
+    margin 15px 0
+
+.calendar-option
+    appearance none
+    display flex
+    flex-direction row
+    justify-content center
+    align-items center
+    border 0
+    width 48px
+    height 48px
+    border-radius 24px
+    font-size 21px
+    color primary-2
+    background-color transparent
+    transition color .25s ease-out
+    outline none
+    user-select none
+    transition background-color .25s ease-out, color .25s ease-out, box-shadow .25s ease-out
+    cursor pointer
+
+    &:hover,
+    &:focus
+        background-color primary-1
+        color text-on-primary
+        box-shadow rgba(255,153,204,0.5) 0px 3px 7px, 
+                    rgba(255,153,204,0.424) 0px 10px 25px
+
+.calendar-footer
+    display flex
+    flex-direction row
+    justify-content flex-end
+    align-items center
+    width 426px
+    margin 0 0 30px 0
+
+.calendar-to-less
+    appearance none
+    display flex
+    flex-direction row
+    justify-content center
+    align-items center
+    border 0
+    background-color transparent
+    padding 6px 12px
+    color primary-1
+    border-radius 6px
+    font-weight bold
+    font-size 16px
+    transition background-color .25s ease-out, color .25s ease-out, box-shadow .25s ease-out
+    outline none
+    cursor pointer
+
+    &:hover,
+    &:focus
+        background-color primary-1
+        color text-on-primary
+        box-shadow rgba(255,153,204,0.5) 0px 3px 7px, 
+                    rgba(255,153,204,0.424) 0px 10px 25px

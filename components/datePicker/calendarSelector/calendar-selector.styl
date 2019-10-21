@@ -1,0 +1,29 @@
+@import '~stylus/colors'
+
+.calendar-selector
+    appearance none
+    display flex
+    flex-direction row
+    justify-content center
+    align-items center
+    border 0
+    width 48px
+    height 48px
+    border-radius 24px
+    font-size 21px
+    color detail-2
+    background-color transparent
+    transition background-color .25s ease-out, color .25s ease-out, box-shadow .25s ease-out
+    outline none
+    cursor pointer
+    user-select none
+
+    &:hover,
+    &:active
+        color primary-2
+
+    &.active
+        background-color primary-1
+        color text-on-primary
+        box-shadow 0 3px 7px rgba(255,153,204,0.5), 
+                    0 10px 25px rgba(255,153,204,0.425)

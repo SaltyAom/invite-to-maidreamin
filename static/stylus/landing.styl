@@ -1,0 +1,244 @@
+@import '~stylus/colors'
+
+#landing
+    position relative
+    display flex
+    flex-direction column
+    justify-content center
+    align-items flex-end
+    width 960px
+    height 100vh
+    margin 0 auto
+
+#landing-wrapper, #login-wrapper
+    display flex
+    flex-direction column
+    justify-content center
+    align-items flex-start
+    width 100%
+    height auto
+    animation landing-wrapper-in .675s ease-out
+
+    & > .title
+        display block
+        font-size 36px
+        line-height 1.35em
+        color #737373
+        cursor default
+    
+    & > .main
+        font-size 72px
+        font-weight: bold
+        color primary-1
+        text-shadow 0 3px 7px rgba(244, 125, 187, .25)
+
+@keyframes landing-wrapper-in
+    0%
+        opacity 0
+
+    50%
+        opacity 0
+
+    100%
+        opacity 1
+
+#login-wrapper
+    align-items flex-end
+    animation login-wrapper-in .675s ease-out
+
+@keyframes login-wrapper-in
+    0%
+        opacity 0
+
+    50%
+        opacity 0
+
+    100%
+        opacity 1
+
+#landing-info-graphic
+    position fixed
+    margin-top: 30px
+    margin-left 250px
+    z-index -2
+    width: 860px
+    transition margin-left .325s ease-out
+
+    &.login
+        left 50px
+        margin-left 0
+
+#landing-continue
+    appearance none
+    background-color primary-1
+    color text-on-primary
+    border 0
+    width 319px
+    margin-top 50px
+    padding 16px
+    font-size 28px
+    letter-spacing .0425em
+    font-weight bold
+    text-align center
+    border-radius 4px
+    text-decoration none
+    outline none
+    box-shadow  0 3px 7px rgba(244, 125, 187, .25),
+            0 7px 15px rgba(244, 125, 187, .325)
+    transition box-shadow .25s ease-out
+    cursor pointer
+
+    &:hover,
+    &:focus
+        box-shadow  0 7px 15px rgba(244, 125, 187, .25),
+                    0 12px 22px rgba(244, 125, 187, .325)
+
+#facebook-button
+    position relative
+    appearance none
+    display flex
+    justify-content center
+    align-items center
+    border 0
+    color #fff
+    font-weight normal
+    background-color #2d4486
+    width 319px
+    margin-top 50px
+    padding 16px
+    border-radius 4px
+    font-size 19px
+    letter-spacing .0425em
+    outline none
+    cursor pointer
+
+#facebook-icon
+    position absolute
+    left 15px
+    width 28px
+    height 28px
+
+#landing-bubble
+    position fixed
+    width 500px
+    height 500px
+    background primary-1
+    margin-left 300px
+    z-index: -3
+    border-radius 30% 70% 70% 30% / 30% 30% 70% 70%
+    transition margin-left .4s ease-out, transform .4s ease-out
+
+    &.login
+        left 100px
+        margin-left 50px
+        transform rotate(45deg)
+
+#landing-background
+    display none
+    position fixed
+    z-index -4
+    width 100%
+    height 100vh
+    top 0
+    left 0
+    background-color primary-1
+
+#login-back
+    position relative
+    appearance unset
+    border 0
+    background-color transparent
+    display flex
+    flex-direction row
+    justify-content flex-start
+    align-items center
+    font-size 18px
+    color tertiary-1
+    margin-bottom 50px
+    outline none
+    width 76px
+    margin-right 321px
+    transition color .2s ease-out
+    cursor pointer
+
+    & > .underline
+        position absolute
+        display block
+        margin-top 15px
+        width 0
+        height 2px
+        background-color primary-1
+        transition width .2s ease-out
+
+    &:hover,
+    &:focus
+        color: primary-1
+
+        & > .underline
+            width 100%
+
+@media screen and (min-width:768px) and (max-width:1160px)
+    #landing
+        width 100%
+        padding 10%
+
+    #landing-info-graphic
+        width 600px
+        left calc(10% + 370px)
+        margin-left unset
+
+    #landing-bubble
+        width 400px
+        height 400px
+        right 0px
+        margin-left unset
+
+    @media screen and (max-height:415px)
+        #landing-wrapper, #login-wrapper
+            & > .title
+                font-size 24px
+
+            & > .main
+                font-size 60px
+
+        #landing-bubble
+            width 300px
+            height 300px
+
+        #landing-info-graphic
+            width 500px
+        
+        #landing-continue
+            width 270px
+            font-size 24px
+
+@media screen and (max-width:767.9px)
+    #landing
+        width 100%
+        padding 10%
+
+    #landing-wrapper, #login-wrapper
+        & > .title
+            font-size 24px
+
+        & > .main
+            font-size 52px
+
+    #landing-continue
+        width 280px
+        font-size 28px
+
+    #landing-info-graphic
+        bottom 0
+        right 0
+        margin-left unset
+        width 450px
+        bottom 10px
+
+    #landing-bubble
+        left -5%
+        background-color #fff
+        margin-left unset
+
+    #landing-background
+        display block

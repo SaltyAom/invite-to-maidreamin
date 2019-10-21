@@ -1,0 +1,42 @@
+@import '~stylus/colors'
+
+.card-container
+    display grid
+    grid-auto-rows 1fr
+    grid-template-columns repeat(3, 1fr)
+    grid-gap 25px 15px
+    width 100%
+    padding 15px 15px 15px 0
+    margin 15px 0 45px 0
+
+    & > .create
+        appearance none
+        display flex
+        flex-direction column
+        justify-content center
+        align-items center
+        padding 20px
+        width 100%
+        color primary-1
+        text-decoration none
+        background-color transparent
+        border 0
+        border-radius 3px
+        transition background-color .25s ease-out
+        outline none
+        cursor pointer
+
+        &:hover,
+        &:focus
+            background-color rgba(244,125,187,.1)
+
+        & > .title
+            font-size 60px
+            margin 0 0 20px 0
+            color primary-1
+
+        & > .detail
+            font-size 18px
+            margin 0
+            color primary-1
+            font-weight bold

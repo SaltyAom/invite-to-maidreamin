@@ -1,0 +1,53 @@
+@import '~stylus/colors'
+
+#create-layout
+    display flex
+    flex-direction column
+    justify-content center
+    align-items flex-start
+    width 100%
+    margin 15px 0
+    padding 0
+
+#create-aside
+    display flex
+    flex-direction row
+    justify-content space-between
+    align-items center
+    width 100%
+    margin 15px 0
+    padding 15px 0
+
+    & > .create-nav
+        display flex
+        flex-direction row
+        justify-content center
+        align-items center
+        font-size 18px
+        padding 8px 20px
+        background-color transparent
+        border-radius 8px
+        text-decoration none
+        transition background-color .25s ease-out, box-shadow .25s ease-out, color .25s ease-out
+        cursor pointer
+
+    & > .create-back
+        color detail-3
+
+        &:hover,
+        &:focus
+            background-color rgba(0,0,0,.0375)
+
+    & > .create-next
+        color text-on-primary
+        background-color primary-1
+        font-weight bold
+        box-shadow rgba(255, 153, 204, 0.5) 0px 3px 7px, 
+                    rgba(255, 153, 204, 0.424) 0px 10px 25px
+
+        &.disabled
+            color detail-3
+            background-color transparent
+            box-shadow unset
+            opacity .675
+            cursor not-allowed

@@ -1,0 +1,25 @@
+#layout
+    display flex
+    flex-direction column
+    justify-content flex-start
+    align-items flex-start
+    width 890px
+    margin 0 auto 30px auto
+    padding 88px 0 30px 70px
+    animation layout-in .25s ease-out 0s 1
+
+@keyframes layout-in
+    from
+        opacity 0
+        transform translateY(25px)
+
+    to
+        opacity 1
+        transform translateY(0)
+
+@media screen and (max-width 1365.9px)
+    #layout
+        width calc(100% - 121px)
+        margin-left 96px
+        margin-right 25px
+        padding-left 0

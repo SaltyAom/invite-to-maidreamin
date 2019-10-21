@@ -1,0 +1,20 @@
+@import '~stylus/colors'
+
+.input-text
+    appearance none
+    border 0
+    background-color transparent
+    width auto
+    min-width 300px
+    padding 5px 0
+    font-size 24px
+    border-bottom 3px solid transparent
+    outline 0
+    transition border-bottom-color .25s ease-out
+
+    &:placeholder-shown
+        border-bottom-color preload
+
+    &:hover,
+    &:focus
+        border-bottom-color primary-1

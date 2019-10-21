@@ -1,0 +1,26 @@
+@import '~stylus/colors'
+
+.input-detail
+    color detail-3
+    font-size 16px
+    font-weight bold
+    margin 5px 0 30px 0
+    transition color .25s ease-out, opacity .25s ease-out
+
+    &.danger
+        color danger
+
+    &.success
+        color primary-1
+
+.input + .input-detail.success
+    opacity 0
+
+.input
+    &:hover,
+    &:focus
+        & + .input-detail.success
+            opacity 1
+
+.input-detail.detail
+    display none

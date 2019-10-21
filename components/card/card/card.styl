@@ -1,0 +1,49 @@
+@import '~stylus/colors'
+
+.card
+    appearance none
+    display flex
+    flex-direction column
+    justify-content flex-start
+    align-items flex-start
+    padding 20px
+    width 100%
+    background-color card
+    border 0
+    box-shadow 0 3px 7px rgba(0,0,0,.0275)
+    border-radius 3px
+    transition box-shadow .25s ease-out
+    outline none
+    cursor pointer
+
+    &:hover,
+    &:focus
+        box-shadow 0 3px 5px rgba(0,0,0,.0325),
+                    0 10px 25px rgba(0,0,0,.0425)
+
+    & > .title
+        font-size 24px
+        font-weight bold
+        margin 0 0 25px 0
+        color detail-1
+
+    & > .wrapper
+        display block
+        margin 0 0 10px 0
+        padding 0 0 0 30px
+        list-style-type disc
+
+    & > .footer
+        display flex
+        flex-direction row
+        justify-content flex-start
+        align-items center
+        width 100%
+        font-size 16px
+        color detail-2
+        margin-top 10px
+        text-align left
+
+        & > .material-icons
+            font-size 18px
+            margin-right 0.35em

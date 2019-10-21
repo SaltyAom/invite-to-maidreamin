@@ -1,0 +1,32 @@
+@import '~stylus/colors'
+
+.setter-wrapper
+    display flex
+    flex-direction column
+    justify-content center
+    align-items flex-start
+    padding 8px 0
+
+    & > .setter
+        appearance none
+        border 0
+        background-color transparent
+        color link
+        font-size 18px
+        font-weight bold
+        outline none
+        cursor pointer
+
+        & > .underline
+            display block
+            width 0
+            height 2px
+            margin-top 4px
+            background-color link
+            transition width .2s ease-out
+
+        &:hover,
+        &:focus
+
+            & > .underline
+                width 100%

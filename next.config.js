@@ -20,7 +20,7 @@ module.exports = withStylus({
 				__dirname,
 				"static/assets"
 			)),
-			(config.resolve.alias["css"] = path.join(__dirname, "static/css")),
+			(config.resolve.alias["stylus"] = path.join(__dirname, "static/stylus")),
 			(config.resolve.alias["components"] = path.join(
 				__dirname,
 				"components"

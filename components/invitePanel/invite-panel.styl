@@ -1,0 +1,86 @@
+@import '~stylus/colors'
+
+.invite-wrapper
+    position relative
+    width 100%
+
+.invite-button
+    appearance none
+    border 0
+    background-color transparent
+    display flex
+    flex-direction row
+    justify-content flex-start
+    align-items center
+    width 100%
+    margin 15px 0
+    padding 15px 25px
+    border-radius 7px
+    background-color transparent
+    transition background-color .25s ease-out
+    cursor pointer
+    outline none
+
+    &:hover,
+    &:focus
+        background-color rgba(0,0,0,.0325)
+
+    .add-icon
+        display flex
+        flex-direction column
+        justify-content center
+        align-items center
+        width 48px
+        height 48px
+        margin 0 15px 0 0
+        color primary-1
+        border-radius 12px
+        background-color transparent
+
+    & > .name
+        color detail-2
+        font-size 21px
+        margin 0
+        cursor pointer
+
+.invite-dialog
+    position absolute
+    bottom -30px
+    left 0
+    display flex
+    flex-direction column
+    justify-content flex-start
+    align-items center
+    width 300px
+    padding 10px 0
+    border-radius 7px
+    background-color root
+    box-shadow 0 3px 7px rgba(0,0,0,.0875)
+    animation invite-dialog-in .25s ease-out 0s 1
+
+    & > .search-wrapper
+        display flex
+        flex-direction row
+        justify-content space-between
+        align-items center
+        width calc(100% - 30px)
+        padding 0
+
+        & > .side
+            font-size 24px
+            color detail-3
+
+        & > .search
+            appearance none
+            width 100%
+            padding 8px 15px
+            font-size 21px
+            border 0
+            outline none
+
+@keyframes invite-dialog-in
+    from
+        opacity 0
+
+    to
+        opacity 1

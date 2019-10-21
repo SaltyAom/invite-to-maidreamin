@@ -1,5 +1,6 @@
 /* Alias */
-import "module-alias/register"
+require("module-alias/register")
+
 /* Server */
 const express = require("express")
 const next = require("next")

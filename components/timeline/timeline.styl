@@ -1,0 +1,48 @@
+@import '~stylus/colors'
+
+.timeline, .timeline-end
+    position relative
+    display flex
+    flex-direction column
+    justify-content flex-start
+    align-items flex-start
+    width 100%
+    height auto
+
+    & > .time, 
+    & > .end
+        position absolute
+        top 0
+        left 0
+        width 16px
+        height 16px
+        border-radius 8px
+        background-color background
+        border 4px solid primary-1
+
+    & > .line
+        position absolute
+        top 15px
+        left 6px
+        width 4px
+        height calc(100% - 14px)
+        background-color primary-1
+
+    & > .data
+        display block
+        width calc(100% - 32px)
+        margin-left 32px
+
+        & > .title
+            position absolute
+            top -16px
+            margin 0
+            font-size 36px
+            color detail-1
+            font-weight normal
+
+        & > .title-placeholder
+            display block
+            width 100%
+            height 20px
+            background-color transparent
